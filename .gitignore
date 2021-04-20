@@ -166,6 +166,3 @@ Thumbs.db
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 
-*.sqlite3
-db.sqlite3
-/db.sqlite3
