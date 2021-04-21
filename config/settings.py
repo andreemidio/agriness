@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,8 +38,8 @@ DJANGO_APPS = [
 
 THIRD_APPS = [
     'rest_framework',
-    'drf_yasg',
     'rest_framework.authtoken',
+    'drf_yasg',
 ]
 
 LOCAL_APPS = [
@@ -111,6 +110,48 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+
+    "DATE_INPUT_FORMATS": ["%d/%m/%Y"],
+
+    # # classes de permissão
+    # 'DEFAULT_PERMISSION_CLASSES': (
+    #     'rest_framework.permissions.IsAuthenticated',
+    #     # 'rest_framework.permissions.IsAdminUser',
+    #     'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
+    # ),
+    #
+    # # Classes de autenticação
+    # 'DEFAULT_AUTHENTICATION_CLASSES': (
+    #     'rest_framework.authentication.TokenAuthentication',
+    #
+    #     'rest_framework.authentication.SessionAuthentication',
+    #     'rest_framework.authentication.BasicAuthentication',
+    # ),
+
+    'DEFAULT_RENDERER_CLASSES': (
+
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ),
+
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser',
+    ),
+
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+    ),
+
+    'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json',
+}
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -133,3 +174,4 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

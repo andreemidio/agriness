@@ -12,4 +12,8 @@ class ListBooksSerializer(serializers.ModelSerializer):
 class PostBookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Books
-        fields = '__all__'
+        fields = ['title']
+
+
+class PutReserveBooksSerializer(serializers.Serializer):
+    client_reserve = serializers.UUIDField()

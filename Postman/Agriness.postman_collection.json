@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "e8d9520a-11ed-4c1d-8a08-53631b0831cb",
+		"name": "Agriness",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "books -  Listagem de todos os livros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/books/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books -  Cadastro de Livros",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"A indomável\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/books/add/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								"add",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserve-book -  Para fazer o emprestimo do livro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_reserve\": \"bbd90f94-f3e6-4392-a0ec-0e1c902a8b39\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/books/reserve-book/293b5999-bb2c-498a-bd3c-20020b0b29a2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								"reserve-book",
+								"293b5999-bb2c-498a-bd3c-20020b0b29a2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserve-book -  Para fazer a reserva do livro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/books/bbd90f94-f3e6-4392-a0ec-0e1c902a8b39/reserve",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								"bbd90f94-f3e6-4392-a0ec-0e1c902a8b39",
+								"reserve"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "Clients - List Clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/clients/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"clients",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resserve - Listagem de livros emprestados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/clients/bbd90f94-f3e6-4392-a0ec-0e1c902a8b39/books/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"clients",
+								"bbd90f94-f3e6-4392-a0ec-0e1c902a8b39",
+								"books",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar novos clientes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\"  : \"b@b.com.br\",\r\n    \"cellphone\":\"(12)98862-4725\",\r\n    \"email\":\"b@b.com.br\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/clients/add/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"clients",
+								"add",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
