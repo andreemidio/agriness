@@ -12,6 +12,4 @@ jobs:
       - uses: actions/checkout@master
       - uses: matt-ball/newman-action@master
         with:
-          apiKey: ${{ secrets.postmanApiKey }}
-          collection: postman_collection.json
-          environment: 5922408-228c7edd-fc15-4f68-9665-a35d7df6945b
+          collection: https://raw.githubusercontent.com/andreemidio/agriness/main/Postman/Agriness.postman_collection.json
