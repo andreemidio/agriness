@@ -12,4 +12,5 @@ jobs:
       - uses: actions/checkout@master
       - uses: matt-ball/newman-action@master
         with:
-          collection: https://raw.githubusercontent.com/andreemidio/agriness/main/Postman/Agriness.postman_collection.json
+          collection: https://www.postman.com/collections/9322443-fbc36cd3-32cf-4caf-a468-04bd5367509d
+
