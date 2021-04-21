@@ -6,7 +6,10 @@ from apps.clients.models import Clients
 class ListClientsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Clients
-        fields = '__all__'
+        fields = ['id', 'fullname', 'cellphone', 'email']
 
 
-# class ListBooksClientsSerializer(se)
+class PostClientsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Clients
+        fields = ['id', 'fullname', 'cellphone', 'email']
