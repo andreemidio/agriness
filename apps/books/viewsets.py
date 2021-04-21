@@ -38,7 +38,11 @@ class PutReserveBooksViewSet(mixins.UpdateModelMixin, GenericViewSet):
     parser_classes = (parsers.JSONParser, parsers.MultiPartParser,)
 
     def update(self, request, *args, **kwargs):
-        self.queryset.update(is_reserve=True, client_reserve=request.data['client_reserve'])
+        self.queryset.update(is_reserve=True,
+                             client_reserve=request.data['client_reserve'],
+                             date_loan=request.data['date_loan'],
+                             date_devolution=request.data['date_devolution']
+                             )
 
         content = dict(
             info=f'Reserva efetuada com sucesso para o usuario '

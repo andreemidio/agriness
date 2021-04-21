@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e8d9520a-11ed-4c1d-8a08-53631b0831cb",
+		"_postman_id": "9bd29f2a-16f7-4076-b306-bbda95d93dba",
 		"name": "Agriness",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -67,7 +67,7 @@
 					"response": []
 				},
 				{
-					"name": "Reserve-book -  Para fazer o emprestimo do livro",
+					"name": "Reserve-book -  Para fazer o emprestimo do livro para um cliente",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -156,7 +156,7 @@
 					"response": []
 				},
 				{
-					"name": "Resserve - Listagem de livros emprestados",
+					"name": "Books - Listagem de livros emprestados",
 					"request": {
 						"method": "GET",
 						"header": [],

@@ -1,3 +1,5 @@
+from datetime import date
+
 from rest_framework import serializers
 
 from apps.books.models import Books
@@ -17,3 +19,5 @@ class PostBookSerializer(serializers.ModelSerializer):
 
 class PutReserveBooksSerializer(serializers.Serializer):
     client_reserve = serializers.UUIDField()
+    date_loan = serializers.DateField()
+    date_devolution = serializers.DateField()
