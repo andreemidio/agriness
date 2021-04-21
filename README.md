@@ -31,4 +31,10 @@ python manage.py runserver
 
 Com o servidor em pé, coloquei o arquivo para utilzação no Postman, para uso e auxilio de quem irá testar a aplicação.
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/f295b3fa1c19c0d0598e)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/9322443-fbc36cd3-32cf-4caf-a468-04bd5367509d?action=collection%2Ffork&collection-url=entityId%3D9322443-fbc36cd3-32cf-4caf-a468-04bd5367509d%26entityType%3Dcollection%26workspaceId%3D979fec70-d95c-4ff6-b45f-ad178889eac7)
+
+
+Alguns ponto de atenção:
+
+     - O UML pode e tem que ser melhorado, o que eu fiz é para apenas esse desafio.
+     - Algumas coisas que fiz foram para facilitar minha vida e ganhar tempo.
