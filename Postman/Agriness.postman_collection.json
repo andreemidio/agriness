@@ -39,7 +39,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"A indomável\"\r\n}",
+							"raw": "{\r\n  \"title\": \"Cova 312\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -73,7 +73,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"client_reserve\": \"bbd90f94-f3e6-4392-a0ec-0e1c902a8b39\"\r\n}",
+							"raw": "{\r\n    \"client_reserve\": \"33a64f40-e91f-4380-a8b8-5773aaf3331d\",\r\n    \"date_loan\":\"2021-04-21\",\r\n    \"date_devolution\":\"2021-04-21\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -161,7 +161,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/clients/bbd90f94-f3e6-4392-a0ec-0e1c902a8b39/books/",
+							"raw": "http://127.0.0.1:8000/api/clients/61a55360-2c2b-4922-afc1-b3e6a8b26d27/books/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -173,7 +173,7 @@
 							"path": [
 								"api",
 								"clients",
-								"bbd90f94-f3e6-4392-a0ec-0e1c902a8b39",
+								"61a55360-2c2b-4922-afc1-b3e6a8b26d27",
 								"books",
 								""
 							]
@@ -188,7 +188,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"fullname\"  : \"b@b.com.br\",\r\n    \"cellphone\":\"(12)98862-4725\",\r\n    \"email\":\"b@b.com.br\"\r\n}",
+							"raw": "{\r\n    \"fullname\"  : \"d@d.com.br\",\r\n    \"cellphone\":\"(12)98862-4725\",\r\n    \"email\":\"d@d.com.br\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
