@@ -33,6 +33,15 @@ Com o servidor em pé, coloquei o arquivo para utilzação no Postman, para uso 
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/9322443-fbc36cd3-32cf-4caf-a468-04bd5367509d?action=collection%2Ffork&collection-url=entityId%3D9322443-fbc36cd3-32cf-4caf-a468-04bd5367509d%26entityType%3Dcollection%26workspaceId%3D979fec70-d95c-4ff6-b45f-ad178889eac7)
 
+Sobre testes.
+
+Eu não tenho muito conhecimento em testes unitários ainda, mas ainda sim tentei criar uma forma de fazê-los
+
+Usei o [Newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/#:~:text=line%20with%20Newman-,Newman%20is%20a%20command%20line%20Collection%20Runner%20for%20Postman.,integration%20servers%20and%20build%20systems.) do Postman
+
+``
+newman run Postman/Agriness.postman_collection.json
+``
 
 Alguns ponto de atenção:
 
